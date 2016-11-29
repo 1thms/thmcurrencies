@@ -1,5 +1,5 @@
 //
-//  AppDelegate.h
+//  THMBaseButton.h
 //  Currencies
 //
 //  Created by Krzysztof Jężak on 28.11.2016.
@@ -7,11 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-#import <CoreData/CoreData.h>
 
-@interface AppDelegate : UIResponder <UIApplicationDelegate>
-
-@property (strong, nonatomic) UIWindow *window;
+@interface THMBaseButton : UIButton
 
 @end
-

@@ -7,27 +7,64 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1954FBB5D3EF315769A178C7 /* libPods-Currencies.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 39F00DC86ECC5E55ACE211DC /* libPods-Currencies.a */; };
+		CA33616F1DECD7A6002B74C6 /* Currencies.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CA33616D1DECD7A6002B74C6 /* Currencies.xcdatamodeld */; };
+		CA3361721DECD829002B74C6 /* THMBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CA3361711DECD829002B74C6 /* THMBaseViewController.m */; };
+		CA3361771DECD84E002B74C6 /* THMUIUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = CA3361761DECD84E002B74C6 /* THMUIUtils.m */; };
+		CA33617D1DECDA52002B74C6 /* THMFirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CA33617C1DECDA52002B74C6 /* THMFirstViewController.m */; };
+		CA3361801DECDA61002B74C6 /* THMSecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CA33617F1DECDA61002B74C6 /* THMSecondViewController.m */; };
+		CA3361831DECDA70002B74C6 /* THMThirdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CA3361821DECDA70002B74C6 /* THMThirdViewController.m */; };
+		CA3361871DECDC66002B74C6 /* THMBaseButton.m in Sources */ = {isa = PBXBuildFile; fileRef = CA3361861DECDC66002B74C6 /* THMBaseButton.m */; };
 		CA82127F1DECD29D00B14EB3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CA82127E1DECD29D00B14EB3 /* main.m */; };
 		CA8212821DECD29D00B14EB3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CA8212811DECD29D00B14EB3 /* AppDelegate.m */; };
-		CA8212851DECD29D00B14EB3 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CA8212841DECD29D00B14EB3 /* ViewController.m */; };
 		CA8212881DECD29D00B14EB3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA8212861DECD29D00B14EB3 /* Main.storyboard */; };
-		CA82128B1DECD29D00B14EB3 /* Currencies.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CA8212891DECD29D00B14EB3 /* Currencies.xcdatamodeld */; };
 		CA82128D1DECD29D00B14EB3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CA82128C1DECD29D00B14EB3 /* Assets.xcassets */; };
 		CA8212901DECD29D00B14EB3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA82128E1DECD29D00B14EB3 /* LaunchScreen.storyboard */; };
+		CA9A4B0D1DED731C00B8050C /* THMPopOverPicker.m in Sources */ = {isa = PBXBuildFile; fileRef = CA9A4B0C1DED731C00B8050C /* THMPopOverPicker.m */; };
+		CABCC42E1DEDB6BF001D438E /* THMCoreDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CABCC42D1DEDB6BF001D438E /* THMCoreDataManager.m */; };
+		CABFF5F11DECE1C4003A2214 /* BaseURLRequestService.m in Sources */ = {isa = PBXBuildFile; fileRef = CABFF5F01DECE1C4003A2214 /* BaseURLRequestService.m */; };
+		CABFF5F41DECE410003A2214 /* CurrenciesURLRequestService.m in Sources */ = {isa = PBXBuildFile; fileRef = CABFF5F31DECE410003A2214 /* CurrenciesURLRequestService.m */; };
+		CAED67CE1DED78020040D6A6 /* Currency+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = CAED67CB1DED78020040D6A6 /* Currency+CoreDataProperties.m */; };
+		CAED67CF1DED78020040D6A6 /* Currency.m in Sources */ = {isa = PBXBuildFile; fileRef = CAED67CD1DED78020040D6A6 /* Currency.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		39F00DC86ECC5E55ACE211DC /* libPods-Currencies.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Currencies.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6D6EB9679541EA6D52B8F32E /* Pods-Currencies.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Currencies.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Currencies/Pods-Currencies.debug.xcconfig"; sourceTree = "<group>"; };
+		8A147DCF82E1324E55E3CB93 /* Pods-Currencies.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Currencies.release.xcconfig"; path = "Pods/Target Support Files/Pods-Currencies/Pods-Currencies.release.xcconfig"; sourceTree = "<group>"; };
+		CA33616E1DECD7A6002B74C6 /* Currencies.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Currencies.xcdatamodel; sourceTree = "<group>"; };
+		CA3361701DECD829002B74C6 /* THMBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = THMBaseViewController.h; sourceTree = "<group>"; };
+		CA3361711DECD829002B74C6 /* THMBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = THMBaseViewController.m; sourceTree = "<group>"; };
+		CA3361751DECD84E002B74C6 /* THMUIUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = THMUIUtils.h; sourceTree = "<group>"; };
+		CA3361761DECD84E002B74C6 /* THMUIUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = THMUIUtils.m; sourceTree = "<group>"; };
+		CA33617B1DECDA52002B74C6 /* THMFirstViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = THMFirstViewController.h; sourceTree = "<group>"; };
+		CA33617C1DECDA52002B74C6 /* THMFirstViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = THMFirstViewController.m; sourceTree = "<group>"; };
+		CA33617E1DECDA61002B74C6 /* THMSecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = THMSecondViewController.h; sourceTree = "<group>"; };
+		CA33617F1DECDA61002B74C6 /* THMSecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = THMSecondViewController.m; sourceTree = "<group>"; };
+		CA3361811DECDA70002B74C6 /* THMThirdViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = THMThirdViewController.h; sourceTree = "<group>"; };
+		CA3361821DECDA70002B74C6 /* THMThirdViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = THMThirdViewController.m; sourceTree = "<group>"; };
+		CA3361851DECDC66002B74C6 /* THMBaseButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = THMBaseButton.h; sourceTree = "<group>"; };
+		CA3361861DECDC66002B74C6 /* THMBaseButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = THMBaseButton.m; sourceTree = "<group>"; };
 		CA82127A1DECD29D00B14EB3 /* Currencies.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Currencies.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA82127E1DECD29D00B14EB3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		CA8212801DECD29D00B14EB3 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		CA8212811DECD29D00B14EB3 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		CA8212831DECD29D00B14EB3 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		CA8212841DECD29D00B14EB3 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		CA8212871DECD29D00B14EB3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		CA82128A1DECD29D00B14EB3 /* Currencies.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Currencies.xcdatamodel; sourceTree = "<group>"; };
 		CA82128C1DECD29D00B14EB3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CA82128F1DECD29D00B14EB3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CA8212911DECD29D00B14EB3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CA9A4B0B1DED731C00B8050C /* THMPopOverPicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = THMPopOverPicker.h; sourceTree = "<group>"; };
+		CA9A4B0C1DED731C00B8050C /* THMPopOverPicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = THMPopOverPicker.m; sourceTree = "<group>"; };
+		CABCC42C1DEDB6BF001D438E /* THMCoreDataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = THMCoreDataManager.h; sourceTree = "<group>"; };
+		CABCC42D1DEDB6BF001D438E /* THMCoreDataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = THMCoreDataManager.m; sourceTree = "<group>"; };
+		CABFF5EF1DECE1C4003A2214 /* BaseURLRequestService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseURLRequestService.h; sourceTree = "<group>"; };
+		CABFF5F01DECE1C4003A2214 /* BaseURLRequestService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseURLRequestService.m; sourceTree = "<group>"; };
+		CABFF5F21DECE410003A2214 /* CurrenciesURLRequestService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CurrenciesURLRequestService.h; sourceTree = "<group>"; };
+		CABFF5F31DECE410003A2214 /* CurrenciesURLRequestService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CurrenciesURLRequestService.m; sourceTree = "<group>"; };
+		CAED67CA1DED78020040D6A6 /* Currency+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Currency+CoreDataProperties.h"; sourceTree = "<group>"; };
+		CAED67CB1DED78020040D6A6 /* Currency+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Currency+CoreDataProperties.m"; sourceTree = "<group>"; };
+		CAED67CC1DED78020040D6A6 /* Currency.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Currency.h; sourceTree = "<group>"; };
+		CAED67CD1DED78020040D6A6 /* Currency.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Currency.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,17 +72,128 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1954FBB5D3EF315769A178C7 /* libPods-Currencies.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0BEA39E66FBCC4BACA5571B3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				39F00DC86ECC5E55ACE211DC /* libPods-Currencies.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9D12A80C40C5EF3BA405ED5B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6D6EB9679541EA6D52B8F32E /* Pods-Currencies.debug.xcconfig */,
+				8A147DCF82E1324E55E3CB93 /* Pods-Currencies.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		CA33616A1DECD76C002B74C6 /* Global */ = {
+			isa = PBXGroup;
+			children = (
+				CA3361841DECDC54002B74C6 /* THMBaseButton */,
+				CA3361741DECD83D002B74C6 /* THMUIUtils */,
+				CA3361731DECD831002B74C6 /* THMBaseViewController */,
+			);
+			path = Global;
+			sourceTree = "<group>";
+		};
+		CA33616B1DECD773002B74C6 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				CABFF5EF1DECE1C4003A2214 /* BaseURLRequestService.h */,
+				CABFF5F01DECE1C4003A2214 /* BaseURLRequestService.m */,
+				CABFF5F21DECE410003A2214 /* CurrenciesURLRequestService.h */,
+				CABFF5F31DECE410003A2214 /* CurrenciesURLRequestService.m */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		CA33616C1DECD778002B74C6 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				CABCC42C1DEDB6BF001D438E /* THMCoreDataManager.h */,
+				CABCC42D1DEDB6BF001D438E /* THMCoreDataManager.m */,
+				CA33616D1DECD7A6002B74C6 /* Currencies.xcdatamodeld */,
+				CAED67CA1DED78020040D6A6 /* Currency+CoreDataProperties.h */,
+				CAED67CB1DED78020040D6A6 /* Currency+CoreDataProperties.m */,
+				CAED67CC1DED78020040D6A6 /* Currency.h */,
+				CAED67CD1DED78020040D6A6 /* Currency.m */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
+		CA3361731DECD831002B74C6 /* THMBaseViewController */ = {
+			isa = PBXGroup;
+			children = (
+				CA3361701DECD829002B74C6 /* THMBaseViewController.h */,
+				CA3361711DECD829002B74C6 /* THMBaseViewController.m */,
+			);
+			name = THMBaseViewController;
+			sourceTree = "<group>";
+		};
+		CA3361741DECD83D002B74C6 /* THMUIUtils */ = {
+			isa = PBXGroup;
+			children = (
+				CA3361751DECD84E002B74C6 /* THMUIUtils.h */,
+				CA3361761DECD84E002B74C6 /* THMUIUtils.m */,
+			);
+			name = THMUIUtils;
+			sourceTree = "<group>";
+		};
+		CA3361781DECD91B002B74C6 /* THMFirstViewController */ = {
+			isa = PBXGroup;
+			children = (
+				CA33617B1DECDA52002B74C6 /* THMFirstViewController.h */,
+				CA33617C1DECDA52002B74C6 /* THMFirstViewController.m */,
+			);
+			path = THMFirstViewController;
+			sourceTree = "<group>";
+		};
+		CA3361791DECD92B002B74C6 /* THMSecondViewController */ = {
+			isa = PBXGroup;
+			children = (
+				CA33617E1DECDA61002B74C6 /* THMSecondViewController.h */,
+				CA33617F1DECDA61002B74C6 /* THMSecondViewController.m */,
+				CA9A4B0B1DED731C00B8050C /* THMPopOverPicker.h */,
+				CA9A4B0C1DED731C00B8050C /* THMPopOverPicker.m */,
+			);
+			path = THMSecondViewController;
+			sourceTree = "<group>";
+		};
+		CA33617A1DECD936002B74C6 /* THMThirdViewController */ = {
+			isa = PBXGroup;
+			children = (
+				CA3361811DECDA70002B74C6 /* THMThirdViewController.h */,
+				CA3361821DECDA70002B74C6 /* THMThirdViewController.m */,
+			);
+			path = THMThirdViewController;
+			sourceTree = "<group>";
+		};
+		CA3361841DECDC54002B74C6 /* THMBaseButton */ = {
+			isa = PBXGroup;
+			children = (
+				CA3361851DECDC66002B74C6 /* THMBaseButton.h */,
+				CA3361861DECDC66002B74C6 /* THMBaseButton.m */,
+			);
+			name = THMBaseButton;
+			sourceTree = "<group>";
+		};
 		CA8212711DECD29D00B14EB3 = {
 			isa = PBXGroup;
 			children = (
 				CA82127C1DECD29D00B14EB3 /* Currencies */,
 				CA82127B1DECD29D00B14EB3 /* Products */,
+				9D12A80C40C5EF3BA405ED5B /* Pods */,
+				0BEA39E66FBCC4BACA5571B3 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -60,15 +208,18 @@
 		CA82127C1DECD29D00B14EB3 /* Currencies */ = {
 			isa = PBXGroup;
 			children = (
+				CA33616A1DECD76C002B74C6 /* Global */,
+				CA33616B1DECD773002B74C6 /* Networking */,
+				CA33616C1DECD778002B74C6 /* CoreData */,
+				CA3361781DECD91B002B74C6 /* THMFirstViewController */,
+				CA3361791DECD92B002B74C6 /* THMSecondViewController */,
+				CA33617A1DECD936002B74C6 /* THMThirdViewController */,
 				CA8212801DECD29D00B14EB3 /* AppDelegate.h */,
 				CA8212811DECD29D00B14EB3 /* AppDelegate.m */,
-				CA8212831DECD29D00B14EB3 /* ViewController.h */,
-				CA8212841DECD29D00B14EB3 /* ViewController.m */,
 				CA8212861DECD29D00B14EB3 /* Main.storyboard */,
 				CA82128C1DECD29D00B14EB3 /* Assets.xcassets */,
 				CA82128E1DECD29D00B14EB3 /* LaunchScreen.storyboard */,
 				CA8212911DECD29D00B14EB3 /* Info.plist */,
-				CA8212891DECD29D00B14EB3 /* Currencies.xcdatamodeld */,
 				CA82127D1DECD29D00B14EB3 /* Supporting Files */,
 			);
 			path = Currencies;
@@ -89,9 +240,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CA8212941DECD29D00B14EB3 /* Build configuration list for PBXNativeTarget "Currencies" */;
 			buildPhases = (
+				D12BDE92F45D2870799BBA05 /* [CP] Check Pods Manifest.lock */,
 				CA8212761DECD29D00B14EB3 /* Sources */,
 				CA8212771DECD29D00B14EB3 /* Frameworks */,
 				CA8212781DECD29D00B14EB3 /* Resources */,
+				DE45D38DEAAF3DAD0D8C86C8 /* [CP] Embed Pods Frameworks */,
+				D65AE54E6AEC5C894A3FB29E /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -108,11 +262,12 @@
 		CA8212721DECD29D00B14EB3 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0730;
+				LastUpgradeCheck = 0810;
 				ORGANIZATIONNAME = "Krzysztof Jężak";
 				TargetAttributes = {
 					CA8212791DECD29D00B14EB3 = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = 4Q8ZS9UGP7;
 					};
 				};
 			};
@@ -147,15 +302,74 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		D12BDE92F45D2870799BBA05 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		D65AE54E6AEC5C894A3FB29E /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Currencies/Pods-Currencies-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DE45D38DEAAF3DAD0D8C86C8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Currencies/Pods-Currencies-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		CA8212761DECD29D00B14EB3 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CA8212851DECD29D00B14EB3 /* ViewController.m in Sources */,
+				CABFF5F11DECE1C4003A2214 /* BaseURLRequestService.m in Sources */,
+				CABCC42E1DEDB6BF001D438E /* THMCoreDataManager.m in Sources */,
 				CA8212821DECD29D00B14EB3 /* AppDelegate.m in Sources */,
-				CA82128B1DECD29D00B14EB3 /* Currencies.xcdatamodeld in Sources */,
+				CAED67CE1DED78020040D6A6 /* Currency+CoreDataProperties.m in Sources */,
+				CA3361871DECDC66002B74C6 /* THMBaseButton.m in Sources */,
+				CA33616F1DECD7A6002B74C6 /* Currencies.xcdatamodeld in Sources */,
+				CA3361771DECD84E002B74C6 /* THMUIUtils.m in Sources */,
+				CABFF5F41DECE410003A2214 /* CurrenciesURLRequestService.m in Sources */,
+				CA33617D1DECDA52002B74C6 /* THMFirstViewController.m in Sources */,
+				CA3361721DECD829002B74C6 /* THMBaseViewController.m in Sources */,
 				CA82127F1DECD29D00B14EB3 /* main.m in Sources */,
+				CA3361831DECDA70002B74C6 /* THMThirdViewController.m in Sources */,
+				CA3361801DECDA61002B74C6 /* THMSecondViewController.m in Sources */,
+				CAED67CF1DED78020040D6A6 /* Currency.m in Sources */,
+				CA9A4B0D1DED731C00B8050C /* THMPopOverPicker.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -195,8 +409,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -240,8 +456,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -267,8 +485,10 @@
 		};
 		CA8212951DECD29D00B14EB3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6D6EB9679541EA6D52B8F32E /* Pods-Currencies.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 4Q8ZS9UGP7;
 				INFOPLIST_FILE = Currencies/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = pl.thms.Currencies;
@@ -278,8 +498,10 @@
 		};
 		CA8212961DECD29D00B14EB3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8A147DCF82E1324E55E3CB93 /* Pods-Currencies.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 4Q8ZS9UGP7;
 				INFOPLIST_FILE = Currencies/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = pl.thms.Currencies;
@@ -306,16 +528,17 @@
 				CA8212961DECD29D00B14EB3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		CA8212891DECD29D00B14EB3 /* Currencies.xcdatamodeld */ = {
+		CA33616D1DECD7A6002B74C6 /* Currencies.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				CA82128A1DECD29D00B14EB3 /* Currencies.xcdatamodel */,
+				CA33616E1DECD7A6002B74C6 /* Currencies.xcdatamodel */,
 			);
-			currentVersion = CA82128A1DECD29D00B14EB3 /* Currencies.xcdatamodel */;
+			currentVersion = CA33616E1DECD7A6002B74C6 /* Currencies.xcdatamodel */;
 			path = Currencies.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;

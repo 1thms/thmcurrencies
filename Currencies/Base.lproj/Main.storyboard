@@ -1,25 +1,261 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="ZEf-da-ZJC">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--First View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="THMFirstViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a5a-pt-ztz" customClass="THMBaseButton">
+                                <rect key="frame" x="160" y="380.5" width="54" height="34"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="buttonDownloadDataDidClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mwy-6J-otw"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZYn-EO-1FM" customClass="THMBaseButton">
+                                <rect key="frame" x="160" y="422" width="54" height="34"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="buttonUseOfflineDidClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="q6Y-UC-TZS"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="a5a-pt-ztz" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="64" id="Aqw-pD-w1T"/>
+                            <constraint firstItem="a5a-pt-ztz" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="cJX-Gv-ibs"/>
+                            <constraint firstItem="ZYn-EO-1FM" firstAttribute="top" secondItem="a5a-pt-ztz" secondAttribute="bottom" constant="7.5" id="crb-gh-JtF"/>
+                            <constraint firstItem="ZYn-EO-1FM" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="els-Bp-RFF"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="WhK-fj-0Cg"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <connections>
+                        <outlet property="buttonDownloadData" destination="a5a-pt-ztz" id="P2l-A8-EEf"/>
+                        <outlet property="buttonUseOffline" destination="ZYn-EO-1FM" id="MrN-E4-Jzb"/>
+                        <segue destination="ZCY-nq-Nnk" kind="push" identifier="secondViewControllerSegue" id="8fn-ML-5zy"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="972" y="38.23088455772114"/>
+        </scene>
+        <!--Second View Controller-->
+        <scene sceneID="jmk-Mk-f4C">
+            <objects>
+                <viewController id="ZCY-nq-Nnk" customClass="THMSecondViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="vO7-88-Jrv"/>
+                        <viewControllerLayoutGuide type="bottom" id="h2W-pE-pYz"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="fiT-UF-hL4">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cap-fj-8sv" customClass="THMBaseButton">
+                                <rect key="frame" x="160" y="571" width="54" height="34"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="buttonBackDidClick:" destination="ZCY-nq-Nnk" eventType="touchUpInside" id="aJv-06-RTY"/>
+                                    <action selector="buttonDownloadDataDidClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="XKX-tG-TAA"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6ph-7J-bGh" customClass="THMBaseButton">
+                                <rect key="frame" x="160" y="613" width="54" height="34"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="buttonDownloadDataDidClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qNd-yR-gwa"/>
+                                    <action selector="buttonStartOverDidClick:" destination="ZCY-nq-Nnk" eventType="touchUpInside" id="nGE-Gd-5uv"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GZm-2f-Soy" customClass="THMBaseButton">
+                                <rect key="frame" x="160" y="529" width="54" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="buttonDownloadDataDidClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="g0q-1d-lme"/>
+                                    <segue destination="9ya-Ks-kJA" kind="push" identifier="THMThirdViewController" id="CjS-nn-u4J"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5my-2v-f9u">
+                                <rect key="frame" x="160" y="64" width="54" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="buttonFindCurrencyDidClick:" destination="ZCY-nq-Nnk" eventType="touchUpInside" id="c5d-SI-Wvg"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="6ph-7J-bGh" firstAttribute="top" secondItem="Cap-fj-8sv" secondAttribute="bottom" constant="8" id="8LK-9v-v0W"/>
+                            <constraint firstItem="6ph-7J-bGh" firstAttribute="centerX" secondItem="fiT-UF-hL4" secondAttribute="centerX" id="GGO-zT-jCs"/>
+                            <constraint firstItem="5my-2v-f9u" firstAttribute="top" secondItem="vO7-88-Jrv" secondAttribute="bottom" constant="44" id="Gq1-mK-cPH"/>
+                            <constraint firstItem="GZm-2f-Soy" firstAttribute="centerX" secondItem="fiT-UF-hL4" secondAttribute="centerX" id="KSZ-XL-Cid"/>
+                            <constraint firstItem="h2W-pE-pYz" firstAttribute="top" secondItem="6ph-7J-bGh" secondAttribute="bottom" constant="20" id="Lxs-dC-nS4"/>
+                            <constraint firstItem="Cap-fj-8sv" firstAttribute="top" secondItem="GZm-2f-Soy" secondAttribute="bottom" constant="8" id="MGh-Vn-5he"/>
+                            <constraint firstItem="5my-2v-f9u" firstAttribute="centerX" secondItem="fiT-UF-hL4" secondAttribute="centerX" id="pr8-i2-H2k"/>
+                            <constraint firstItem="Cap-fj-8sv" firstAttribute="centerX" secondItem="fiT-UF-hL4" secondAttribute="centerX" id="zjQ-Qf-ybd"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="PNi-ww-nH2"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <connections>
+                        <outlet property="buttonBack" destination="Cap-fj-8sv" id="LTi-tk-2in"/>
+                        <outlet property="buttonFindCurrency" destination="5my-2v-f9u" id="gD8-WC-zkJ"/>
+                        <outlet property="buttonRoot" destination="6ph-7J-bGh" id="ADP-z4-yHn"/>
+                        <outlet property="buttonSelectChangeCurrency" destination="GZm-2f-Soy" id="Uoq-CS-ytG"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TWR-Bk-G8E" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1791" y="36"/>
+        </scene>
+        <!--Pop Over Picker-->
+        <scene sceneID="bH6-nj-L5t">
+            <objects>
+                <tableViewController storyboardIdentifier="THMPopOverPicker" id="Zha-ho-hba" customClass="THMPopOverPicker" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="QeI-br-h48">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <connections>
+                            <outlet property="dataSource" destination="Zha-ho-hba" id="PQ2-Gs-dgS"/>
+                            <outlet property="delegate" destination="Zha-ho-hba" id="cp2-rE-Nil"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nGu-x9-KVk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1790" y="-689"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="SRj-Qo-BYs">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="ZEf-da-ZJC" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="9a0-vE-w0V">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="tjv-Y9-cGS"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Jkf-1f-RT4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="49" y="37"/>
+        </scene>
+        <!--Third View Controller-->
+        <scene sceneID="gYi-Um-Q9N">
+            <objects>
+                <viewController id="9ya-Ks-kJA" customClass="THMThirdViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="DDi-yz-wD5"/>
+                        <viewControllerLayoutGuide type="bottom" id="RI4-8C-mXw"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="36F-WF-hPW">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vPb-tU-bvR" customClass="THMBaseButton">
+                                <rect key="frame" x="160" y="571" width="54" height="34"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="buttonBackDidClick:" destination="9ya-Ks-kJA" eventType="touchUpInside" id="LwV-k7-981"/>
+                                    <action selector="buttonDownloadDataDidClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xfd-C3-7fD"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YwL-GQ-q0r" customClass="THMBaseButton">
+                                <rect key="frame" x="160" y="613" width="54" height="34"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="buttonDownloadDataDidClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vlq-DN-Lrh"/>
+                                    <action selector="buttonStartOverDidClick:" destination="9ya-Ks-kJA" eventType="touchUpInside" id="f4j-U5-dQ9"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IIs-oe-KSx" customClass="THMBaseButton">
+                                <rect key="frame" x="160" y="529" width="54" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="buttonChangeCurrencyDidClick:" destination="9ya-Ks-kJA" eventType="touchUpInside" id="nh7-wX-ZnA"/>
+                                    <action selector="buttonDownloadDataDidClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dp4-lG-g4i"/>
+                                </connections>
+                            </button>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DIe-gW-ade">
+                                <rect key="frame" x="48" y="64" width="279" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x6y-LO-0IV">
+                                <rect key="frame" x="160" y="101" width="54" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="buttonFindCurrencyDidClick:" destination="9ya-Ks-kJA" eventType="touchUpInside" id="6CR-Sb-vwy"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="DIe-gW-ade" firstAttribute="centerX" secondItem="36F-WF-hPW" secondAttribute="centerX" id="2B0-rI-UtC"/>
+                            <constraint firstItem="vPb-tU-bvR" firstAttribute="centerX" secondItem="36F-WF-hPW" secondAttribute="centerX" id="4fI-Dz-Iha"/>
+                            <constraint firstItem="x6y-LO-0IV" firstAttribute="top" secondItem="DIe-gW-ade" secondAttribute="bottom" constant="16" id="9Q3-ub-kYN"/>
+                            <constraint firstItem="x6y-LO-0IV" firstAttribute="centerX" secondItem="36F-WF-hPW" secondAttribute="centerX" id="LIv-Lv-uno"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="DIe-gW-ade" secondAttribute="trailing" constant="32" id="LS6-hO-Iwh"/>
+                            <constraint firstItem="RI4-8C-mXw" firstAttribute="top" secondItem="YwL-GQ-q0r" secondAttribute="bottom" constant="20" id="MQU-8z-had"/>
+                            <constraint firstItem="DIe-gW-ade" firstAttribute="leading" secondItem="36F-WF-hPW" secondAttribute="leadingMargin" constant="32" id="Plz-kH-OVI"/>
+                            <constraint firstItem="YwL-GQ-q0r" firstAttribute="centerX" secondItem="36F-WF-hPW" secondAttribute="centerX" id="auW-3g-lS5"/>
+                            <constraint firstItem="YwL-GQ-q0r" firstAttribute="top" secondItem="vPb-tU-bvR" secondAttribute="bottom" constant="8" id="foL-I6-xgD"/>
+                            <constraint firstItem="DIe-gW-ade" firstAttribute="top" secondItem="DDi-yz-wD5" secondAttribute="bottom" constant="44" id="idi-qg-gzP"/>
+                            <constraint firstItem="IIs-oe-KSx" firstAttribute="centerX" secondItem="36F-WF-hPW" secondAttribute="centerX" id="lUE-ze-DO3"/>
+                            <constraint firstItem="vPb-tU-bvR" firstAttribute="top" secondItem="IIs-oe-KSx" secondAttribute="bottom" constant="8" id="q6f-7u-GAa"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="o68-e3-0Gm"/>
+                    <connections>
+                        <outlet property="buttonBack" destination="vPb-tU-bvR" id="c8E-fo-Dpn"/>
+                        <outlet property="buttonFindCurrency" destination="x6y-LO-0IV" id="ktc-5I-N0F"/>
+                        <outlet property="buttonRoot" destination="YwL-GQ-q0r" id="tQI-VY-lcW"/>
+                        <outlet property="buttonSelectChangeCurrency" destination="IIs-oe-KSx" id="pbP-GM-kV7"/>
+                        <outlet property="labelSelectedCurrency" destination="DIe-gW-ade" id="gHX-Cf-HYZ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FSa-vF-EaK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2670" y="38"/>
         </scene>
     </scenes>
 </document>
