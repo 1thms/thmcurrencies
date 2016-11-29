@@ -54,7 +54,7 @@
                     <connections>
                         <outlet property="buttonDownloadData" destination="a5a-pt-ztz" id="P2l-A8-EEf"/>
                         <outlet property="buttonUseOffline" destination="ZYn-EO-1FM" id="MrN-E4-Jzb"/>
-                        <segue destination="ZCY-nq-Nnk" kind="push" identifier="secondViewControllerSegue" id="8fn-ML-5zy"/>
+                        <segue destination="ZCY-nq-Nnk" kind="show" identifier="secondViewControllerSegue" id="8fn-ML-5zy"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -99,7 +99,7 @@
                                 <state key="normal" title="Button"/>
                                 <connections>
                                     <action selector="buttonDownloadDataDidClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="g0q-1d-lme"/>
-                                    <segue destination="9ya-Ks-kJA" kind="push" identifier="THMThirdViewController" id="CjS-nn-u4J"/>
+                                    <segue destination="9ya-Ks-kJA" kind="show" identifier="THMThirdViewController" id="CjS-nn-u4J"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5my-2v-f9u">
